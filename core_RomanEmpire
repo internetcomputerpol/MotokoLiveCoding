@@ -1,0 +1,79 @@
+import Bool "mo:core/Bool";
+import Text "mo:core/Text";
+import Map "mo:core/Map";
+import Nat "mo:core/Nat";
+import Iter "mo:core/Iter";
+
+
+persistent actor RomanEmpire {
+
+
+var id = 1;
+type rank ={ #Legionary_I; 
+            #Legionary_II; 
+            #Decurion_III; 
+            #Centurion_VI; 
+            #Primus_Pilus_V; 
+            #Tribunus_Militum_VI;
+            #Praefectus_Castra_VII;
+            #Legatus_VIII   };
+
+
+/*
+Legionary I – lowest rank, new recruit
+
+Legionary II – experienced soldier
+
+Decurion III – commander of a cavalry squad (small unit)
+
+Centurion VI – commander of a century (~80 soldiers)
+
+
+Primus_Pilus_V – chief centurion of a legion, highest-ranking centurion
+
+Tribunus_Militum_VI – staff officer or senior officer assisting the legate
+
+Praefectus_Castra_VII – camp prefect, responsible for administration and discipline
+
+Legatus_VIII – legion commander, highest authority in a legion
+
+*/
+
+
+type member = 
+{
+name : Text;
+ranga: rank;
+};
+
+let legion = Map.empty<Nat,member>();
+
+public func addlegionMember(name: Text, range: rank) : async Bool
+{
+id += 1;
+let legion_member : member = { name = name; ranga = range;};
+
+Map.add(legion,Nat.compare,id,legion_member);
+return true;
+};
+
+public func removeLegionMember(id : Nat) : async() {
+
+   Map.remove(legion, Nat.compare, id);
+};
+
+public query func getLegionMember(id: Nat) : async ?member
+{
+return Map.get(legion,Nat.compare,id);
+
+};
+
+
+public query func getAllMembers() : async [(Nat, member)] {
+    return Iter.toArray(Map.entries(legion));
+
+};
+
+
+
+};
