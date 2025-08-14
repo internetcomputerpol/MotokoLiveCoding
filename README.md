@@ -1,6 +1,7 @@
 # Motoko Live Coding Session
 
-![Motoko Live Coding](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*vNjDQNaLWb9x2gYIb-iIag.png)
+![Motoko Live Coding](Motoko.png)
+
 
 
 
