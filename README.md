@@ -1,4 +1,4 @@
-# Motoko Live Coding Session
+# Motoko Live Coding Session 🤖
 
 ![Motoko Live Coding](Motoko.png)
 
