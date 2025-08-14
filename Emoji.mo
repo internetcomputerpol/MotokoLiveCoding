@@ -55,7 +55,7 @@ module Emoji {
     public func randomEmoji() : async Text { 
         let blob = await Random.blob(); 
         let idx = Nat8.toNat(blob[0]) % all.size(); 
-        all[idx]; 
+        return all[idx]; 
     };
 
 
