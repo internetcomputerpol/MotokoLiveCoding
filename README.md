@@ -48,7 +48,7 @@ When installing DFX, press ENTER to proceed with the Default Installer.
 
 
 
-# Canister for Query 
-#https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=2wpkx-ciaaa-aaaal-qsr5q-cai
+## Canister for Query 
+https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=2wpkx-ciaaa-aaaal-qsr5q-cai
 
 
