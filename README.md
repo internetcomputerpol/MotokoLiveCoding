@@ -34,3 +34,14 @@ Perfect for learning, experimenting, and building projects in real time with Mot
 
 ```bash
 bash _Install_Script.sh
+
+
+🟡 Before installing updates, the script might ask you for your root password.
+Later on, the script adds paths to your local system environment variables so they’re specific to your user account.
+
+If adding these environment variables fails for some reason, just run the script again — it’ll notice,
+“oh, the update’s already done and I won’t ask for the password this time,”
+meaning you’ll be running it as a normal user.
+
+
+When installing DFX, press ENTER to proceed with the Default Installer.
