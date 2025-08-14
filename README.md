@@ -1,6 +1,6 @@
 # Motoko Live Coding Session
 
-![Opis obrazka]([https://example.com/nazwa_obrazka.png](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*vNjDQNaLWb9x2gYIb-iIag.png))
+![Opis obrazka](https://example.com/nazwa_obrazka.png](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*vNjDQNaLWb9x2gYIb-iIag.png)
 
 
 Welcome to the **Motoko Live Coding Session** repository! 🚀
