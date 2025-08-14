@@ -45,3 +45,10 @@ meaning you’ll be running it as a normal user.
 
 
 When installing DFX, press ENTER to proceed with the Default Installer.
+
+
+
+# Canister for Query 
+#https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=2wpkx-ciaaa-aaaal-qsr5q-cai
+
+
