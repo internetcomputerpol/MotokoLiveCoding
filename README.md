@@ -28,7 +28,7 @@ Perfect for learning, experimenting, and building projects in real time with Mot
 
 ## 📌 Instructions
 
-1. Save the script in a directory of your choice.  
+1. Save the script ( _Install_Script.sh )  in a directory of your choice.  
 2. Open a terminal and navigate (`cd`) to the directory where the script is located.  
 3. Run:
 
