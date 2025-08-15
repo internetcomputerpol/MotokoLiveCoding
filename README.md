@@ -54,3 +54,38 @@ https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=2wpkx-ciaaa-aaaal-qsr5q-cai
 
 
 
+
+DNS
+.ic-assets.json5
+-----------------------
+
+[
+  {
+    "match": ".well-known",
+    "ignore": false
+  }
+]
+
+
+-------------------------
+
+bash ./domain.sh
+
+curl -sL -X POST \
+    -H 'Content-Type: application/json' \
+    https://icp0.io/registrations \
+    --data @- <<EOF
+    {
+      "name": "CUSTOM_DOMAIN"
+    }
+EOF
+
+--------------------------
+
+
+{"id":"REQUEST_ID"}
+
+
+
+
+
