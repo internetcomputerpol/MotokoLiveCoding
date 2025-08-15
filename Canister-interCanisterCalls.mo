@@ -6,12 +6,6 @@ import Nat8 "mo:core/Nat8";
 
 
 
-(with migration = 
-  func (_ : { var nextLockGate : Nat64; var nextThumbSecret : Nat64 }) : {} {
-    {}
-  }
-)
-
 
 persistent actor BurningDangeon {
 
@@ -45,5 +39,16 @@ private func generateRandom(range:Nat) :  async Nat {
   public func showLockGateValue() : async Nat {
     lockGateValue
   };
+
+  public  query func showLockGateQuery() : async Nat 
+  {
+    lockGateValue;
+  };
+
+   public  query func showThumbSecretQuery() : async Nat {
+    thumbSecret
+  };
+
+
 
 }
